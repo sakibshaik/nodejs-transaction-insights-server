@@ -1,0 +1,29 @@
+{
+  "name": "customer-insights",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=local node ./bin/www",
+    "test": "NODE_ENV=test mocha tests/**/*.test.js --exit --silent --reporter spec",
+    "lint": "eslint tests/**/*.js routes/**/*.js controllers/**/*.js"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-clean-routes": "^0.1.0",
+    "faker": "^5.1.0",
+    "helmet": "^4.2.0",
+    "lodash": "^4.17.20",
+    "lokijs": "^1.5.11",
+    "mocha": "^8.2.1",
+    "moment": "^2.29.1",
+    "morgan": "~1.9.1",
+    "sinon": "^9.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
